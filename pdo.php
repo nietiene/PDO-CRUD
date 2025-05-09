@@ -5,7 +5,7 @@ $pass = 'factorise@123';
 
 try {
     // connect mysql server to php
-    $pdo = new PDO("mysql:host=$host", $user, $pass);
+    $pdo = new PDO("mysql:host = $host", $user, $pass);
     $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Create database
